@@ -22,8 +22,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleDebug
 
+    # FIX: Changed from v3 to v4
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: GodModeAPK
         path: app/build/outputs/apk/debug/app-debug.apk
